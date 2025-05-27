@@ -20,4 +20,14 @@ form.addEventListener("Submit", function (event) {
     
     console.log("minha lista de curso :", meusCursos)
 
+    meusCursos.forEach(curso =>{
+        var minhaLi = document.getElementById("li");
+
+        minhaLi.innertext = curso.nome 
+        var lista =document.getElementById("minha-lista");
+
+        lista.appendChild(minhaLi)
+
+    })
+
 })
