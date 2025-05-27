@@ -1,11 +1,23 @@
-var form =document.getElementById("form-cursos")
-
-form.addEventListener("Submit",function(event){
+var form = document.getElementById("form-cursos")
+var meusCursos = [];
+form.addEventListener("Submit", function (event) {
     event.preventDefault();
 
-    var nomeCurso = document.getElementById("nomeCurso")
-    var cagarCurso = document.getElementById("carga-horaria-curso")
+    var nomeCurso = document.getElementById("nomeCurso").value;
+    var cargaCurso = document.getElementById("carga-horaria-curso").value;
 
-    var meusCursos = []
+    
 
-} )
+    var objetocurso = {
+        nome: nomeCurso,
+        cargahoraria:cargaCurso
+
+    }
+
+
+
+    meusCursos.push(objetocurso)
+    
+    console.log("minha lista de curso :", meusCursos)
+
+})
