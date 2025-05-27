@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
     <h1>Cadastro de Cursos</h1>
 
-    <form>
-      <input type="text" placeholder="Nome do curso" required />
-      <input type="number" placeholder="Carga horária (h)" required />
+    <form id="form-curso">
+      <input id="nomeCurso" type="text" placeholder="Nome do curso" required />
+      <input id="cargaCurso"type="number" placeholder="Carga horária (h)" required />
       <button type="submit">Cadastrar Curso</button>
     </form>
 
@@ -20,4 +23,5 @@
   </div>
   <script src="../js/script.js"></script>
 </body>
+
 </html>
